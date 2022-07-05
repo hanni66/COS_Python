@@ -4,7 +4,13 @@
 def solution(price, grade):
     #Write code here.
     answer = 0
-    return answer
+    if grade == "S" :
+        answer = price - price * 0.05
+    if grade == "G" :
+        answer = price - price * 0.1
+    if grade == "V" :
+        answer = price - price * 0.15
+    return int(answer)
 
 #The following is code to output testcase.
 price1 = 2500
